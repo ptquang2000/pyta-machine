@@ -1,4 +1,6 @@
 day*/
+tests/__init__.py
+
 __pycache__/
 
 .env
