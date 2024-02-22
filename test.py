@@ -14,9 +14,14 @@ def main():
             request_modules.add(modules[module_key])
 
     sys.argv = [sys.argv[0]]
+    suite = unittest.TestSuite()
     for request_module in request_modules:
         pkg_name = f"tests.test_{request_module}"
-        unittest.main(pkg_name)
+        module = __import__(pkg_name, {}, {}, ['1'])
+        suite.addTest(unittest.TestLoader().loadTestsFromModule(module))
+
+    unittest.TextTestRunner().run(suite)
+
 
 if __name__ == "__main__":
     main()
