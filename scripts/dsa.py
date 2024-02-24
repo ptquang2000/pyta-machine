@@ -19,6 +19,14 @@ modules = {
         ARGS: "haystack: List[int], needle: int",
         RETURN: "bool",
         IMPORT: ["from typing import List"]
-    },
+   },
+
+   "two_crystal_balls": {
+        TYPE: "function",
+        DEF: "two_crystal_balls",
+        ARGS: "breaks: List[bool]",
+        RETURN: "int",
+        IMPORT: ["from typing import List"]
+   },
 }
     
