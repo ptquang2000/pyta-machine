@@ -2,7 +2,7 @@ import unittest
 from tests import two_crystal_balls
 import random
 
-class TestBinarySearchList(unittest.TestCase):
+class TestTwoCrystalBalls(unittest.TestCase):
 
     def test_two_crystal_balls(self):
         idx = random.randrange(0, 10000)
