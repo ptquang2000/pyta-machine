@@ -129,5 +129,20 @@ modules = {
         ],
         METHODS: LIST_INTERFACE,
     },
+
+    "maze_solver": {
+        TYPE: "function",
+        DEF: "solve",
+        ARGS: "maze, wall, start, end",
+        RETURN: "None",
+
+    },
+
+    "quick_sort": {
+        TYPE: "function",
+        DEF: "quick_sort",
+        ARGS: "arr",
+        RETURN: "None",
+    }
 }
 
