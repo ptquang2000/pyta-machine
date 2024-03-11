@@ -123,7 +123,7 @@ modules = {
 
     "array_list": {
         TYPE: "class",
-        DEF: "Stack",
+        DEF: "ArrayList",
         PROPERTIES: [
             LENGTH_PROPERTY,
         ],
@@ -143,6 +143,15 @@ modules = {
         DEF: "quick_sort",
         ARGS: "arr",
         RETURN: "None",
+    },
+
+    "doubly_linked_list": {
+        TYPE: "class",
+        DEF: "DoublyLinkedList",
+        PROPERTIES: [
+            LENGTH_PROPERTY,
+        ],
+        METHODS: LIST_INTERFACE,
     }
 }
 
