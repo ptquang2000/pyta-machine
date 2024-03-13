@@ -69,16 +69,6 @@ modules = {
         RETURN: "None",
     },
 
-    "list_node": {
-        TYPE: "class",
-        DEF: "ListNode",
-        PROPERTIES: [
-            {NAME: "value", VALUE: "None"},
-            {NAME: "next", VALUE: "None"},
-            {NAME: "prev", VALUE: "None"},
-        ]
-    },
-
     "queue": {
         TYPE: "class",
         DEF: "Queue",
@@ -119,15 +109,6 @@ modules = {
             RETURN: "None",
             ARGS: "",
         }]
-    },
-
-    "array_list": {
-        TYPE: "class",
-        DEF: "ArrayList",
-        PROPERTIES: [
-            LENGTH_PROPERTY,
-        ],
-        METHODS: LIST_INTERFACE,
     },
 
     "maze_solver": {
