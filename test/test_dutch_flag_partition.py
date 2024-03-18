@@ -1,5 +1,5 @@
 import unittest
-from tests import dutch_flag_partition
+from test import dutch_flag_partition
 
 class TestDutchFlagPartition(unittest.TestCase):
     def inner(self, pivot_idx, A):

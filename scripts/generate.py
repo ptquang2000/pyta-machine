@@ -3,7 +3,7 @@ import dsa
 
 script_path = os.path.dirname(__file__)
 work_path = os.path.join(script_path, '..')
-tests_path = os.path.join(work_path, 'tests')
+test_path = os.path.join(work_path, 'test')
 
 day_dirs = [dir_name for dir_name in os.listdir(work_path) if 'day' == dir_name[0:3]]
 today_dir = "day" + str(len(day_dirs) + 1)
@@ -73,8 +73,8 @@ for module, props in dsa.modules.items():
         elif props[dsa.TYPE] == "class":
             f.write(generate_class(props))
     
-os.chdir(tests_path)
-tests_init_file = os.path.join(tests_path, "__init__.py")
-with open(tests_init_file, 'w') as f:
+os.chdir(test_path)
+test_init_file = os.path.join(test_path, "__init__.py")
+with open(test_init_file, 'w') as f:
     for module, props in dsa.modules.items():
         f.write(add_import_pkg(f"{module}", props[dsa.DEF]))

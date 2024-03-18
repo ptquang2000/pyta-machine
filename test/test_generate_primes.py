@@ -1,5 +1,5 @@
 import unittest
-from tests import generate_primes
+from test import generate_primes
 
 class TestGeneratePrimes(unittest.TestCase):
     def test_generate_primes(self):

@@ -1,5 +1,5 @@
 import unittest
-from tests import delete_duplicates
+from test import delete_duplicates
 
 class TestDeleteDuplicates(unittest.TestCase):
     def test_delete_duplicates(self):

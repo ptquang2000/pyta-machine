@@ -1,5 +1,5 @@
 import unittest
-from tests import two_crystal_balls
+from test import two_crystal_balls
 import random
 
 class TestTwoCrystalBalls(unittest.TestCase):

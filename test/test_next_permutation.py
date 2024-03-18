@@ -1,5 +1,5 @@
 import unittest
-from tests import next_permutation
+from test import next_permutation
 
 class TestNextPermutation(self):
     def test_next_permutation(self):

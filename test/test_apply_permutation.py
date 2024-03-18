@@ -1,5 +1,5 @@
 import unittest
-from tests import apply_permutation
+from test import apply_permutation
 
 class TestApplyPermutation(unittest.TestCase):
     def test_apply_permutation(self):

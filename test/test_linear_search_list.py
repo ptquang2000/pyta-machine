@@ -1,5 +1,5 @@
 import unittest
-from tests import linear_search
+from test import linear_search
 
 class TestLinearSearchList(unittest.TestCase):
 

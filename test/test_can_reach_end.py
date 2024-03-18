@@ -1,5 +1,5 @@
 import unittest
-from tests import can_reach_end
+from test import can_reach_end
 
 class TestCanReachEnd(unittest.TestCase):
     def test_can_reach_end(self):

@@ -1,5 +1,5 @@
 import unittest
-from tests import plus_one
+from test import plus_one
 
 class TestPlusOne(unittest.TestCase):
     def test_plus_one(self):

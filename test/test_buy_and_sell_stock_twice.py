@@ -1,5 +1,5 @@
 import unittest
-from tests import buy_and_sell_stock_twice
+from test import buy_and_sell_stock_twice
 
 class TestBuyAndSellStockTwice(unittest.TestCase):
     def test_buy_and_sell_stock_twice(self):

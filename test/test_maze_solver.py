@@ -1,5 +1,5 @@
 import unittest
-from tests import solve
+from test import solve
 
 def draw_path(data, path):
     data2 = [[c for c in line] for line in data]
