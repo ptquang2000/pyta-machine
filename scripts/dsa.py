@@ -69,6 +69,76 @@ modules = {
         RETURN: "None",
     },
 
+    "array_dutch_flag_partition": {
+        TYPE: "function",
+        DEF: "partition",
+        ARGS: "pivot_idx, A",
+        RETURN: "None",
+    },
+
+    "array_plus_one": {
+        TYPE: "function",
+        DEF: "plus_one",
+        ARGS: "A",
+        RETURN: "list",
+    },
+
+    "array_multiply": {
+        TYPE: "function",
+        DEF: "multiply",
+        ARGS: "num1, num2",
+        RETURN: "list",
+    },
+
+    "array_can_reach_end": {
+        TYPE: "function",
+        DEF: "can_reach_end",
+        ARGS: "A",
+        RETURN: "bool",
+    },
+
+    "array_delete_duplicates": {
+        TYPE: "function",
+        DEF: "delete_duplicates",
+        ARGS: "A",
+        RETURN: "int",
+    },
+
+    "array_buy_and_sell_stock_once": {
+        TYPE: "function",
+        DEF: "buy_and_sell_stock_once",
+        ARGS: "prices",
+        RETURN: "int",
+    },
+
+    "array_buy_and_sell_stock_twice": {
+        TYPE: "function",
+        DEF: "buy_and_sell_stock_twice",
+        ARGS: "prices",
+        RETURN: "int",
+    },
+
+    "array_generate_primes": {
+        TYPE: "function",
+        DEF: "generate_primes",
+        ARGS: "n",
+        RETURN: "list",
+    },
+
+    "array_apply_permutation": {
+        TYPE: "function",
+        DEF: "apply_permutation",
+        ARGS: "perm, A",
+        RETURN: "None",
+    },
+
+    "array_next_permutation": {
+        TYPE: "function",
+        DEF: "next_permutation",
+        ARGS: "perm",
+        RETURN: "list",
+    },
+
     "queue": {
         TYPE: "class",
         DEF: "Queue",

@@ -21,6 +21,8 @@ def generate_method(props):
             content = "return False" 
         elif props[dsa.RETURN] == "int":
             content = "return 0"
+        elif props[dsa.RETURN] == "list":
+            content = "return list()"
 
     request_pkgs = ''
     if dsa.IMPORT in props:
