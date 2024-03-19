@@ -71,7 +71,7 @@ modules = {
 
     "array_dutch_flag_partition": {
         TYPE: "function",
-        DEF: "partition",
+        DEF: "dutch_flag_partition",
         ARGS: "pivot_idx, A",
         RETURN: "None",
     },

@@ -9,11 +9,11 @@ class TestDutchFlagPartition(unittest.TestCase):
         A.reverse()
         last= len(A) - 1 - A.index(pivot)
         A.reverse()
-        self.assertEqual([i < pivot for i in A[0:first], [True for _ in A[0:first]])
-        self.assertEqual([i == pivot for i in A[first:last + 1], [True for _ in A[first:last + 1]])
-        self.assertEqual([i > pivot for i in A[last:], [True for _ in A[last:]])
+        self.assertEqual([i < pivot for i in A[0:first]], [True for _ in A[0:first]])
+        self.assertEqual([i == pivot for i in A[first:last + 1]], [True for _ in A[first:last + 1]])
+        self.assertEqual([i > pivot for i in A[last:]], [True for _ in A[last:]])
 
     def test_dutch_flag_partition(self):
         A = [0,1,2,0,2,1,1]
-        inner(3, A[:])
-        inner(2, A[:])
+        self.inner(3, A[:])
+        self.inner(2, A[:])
