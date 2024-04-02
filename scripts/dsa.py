@@ -139,6 +139,34 @@ modules = {
         RETURN: "list",
     },
 
+    "multi_dim_array_is_valid_sudoku": {
+        TYPE: "function",
+        DEF: "is_valid_sudoku",
+        ARGS: "partial_assignment",
+        RETURN: "bool",
+    },
+
+    "multi_dim_array_matrix_in_spiral_order": {
+        TYPE: "function",
+        DEF: "matrix_in_spiral_order",
+        ARGS: "square_matrix",
+        RETURN: "list",
+    },
+
+    "multi_dim_array_rotate_matrix": {
+        TYPE: "function",
+        DEF: "rotate_matrix",
+        ARGS: "square_matrix",
+        RETURN: "list",
+    },
+
+    "multi_dim_array_generate_pascal_triangle": {
+        TYPE: "function",
+        DEF: "generate_pascal_triangle",
+        ARGS: "n",
+        RETURN: "list",
+    },
+
     "queue": {
         TYPE: "class",
         DEF: "Queue",
