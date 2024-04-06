@@ -41,33 +41,103 @@ LIST_INTERFACE = [{
 }]
 
 modules = {
-    "linear_search_list": {
+    # The Last Algorithm Course You'll Need
+
+    "core_linear_search_list": {
         TYPE: "function",
         DEF: "linear_search",
         ARGS: "haystack, needle",
         RETURN: "bool",
     },
 
-    "binary_search_list": {
+    "core_binary_search_list": {
         TYPE: "function",
         DEF: "binary_search",
         ARGS: "haystack, needle",
         RETURN: "bool",
     },
 
-    "two_crystal_balls": {
+    "core_two_crystal_balls": {
         TYPE: "function",
         DEF: "two_crystal_balls",
         ARGS: "breaks",
         RETURN: "int",
     },
 
-    "bubble_sort": {
+    "core_bubble_sort": {
         TYPE: "function",
         DEF: "bubble_sort",
         ARGS: "arr",
         RETURN: "None",
     },
+
+    "core_queue": {
+        TYPE: "class",
+        DEF: "Queue",
+        PROPERTIES: [
+            LENGTH_PROPERTY,
+        ],
+        METHODS: [{ 
+            DEF: "enqueue",
+            ARGS: "item",
+            RETURN: "None",
+        }, {
+            DEF: "deque",
+            ARGS: "",
+            RETURN: "None",
+            }, {
+            DEF: "peek",
+            RETURN: "None",
+            ARGS: "",
+        }]
+    },
+
+    "core_stack": {
+        TYPE: "class",
+        DEF: "Stack",
+        PROPERTIES: [
+            LENGTH_PROPERTY,
+        ],
+        METHODS: [{ 
+            DEF: "push",
+            ARGS: "item",
+            RETURN: "None",
+        }, {
+            DEF: "pop",
+            ARGS: "",
+            RETURN: "None",
+            }, {
+            DEF: "peek",
+            RETURN: "None",
+            ARGS: "",
+        }]
+    },
+
+    "core_maze_solver": {
+        TYPE: "function",
+        DEF: "solve",
+        ARGS: "maze, wall, start, end",
+        RETURN: "None",
+
+    },
+
+    "core_quick_sort": {
+        TYPE: "function",
+        DEF: "quick_sort",
+        ARGS: "arr",
+        RETURN: "None",
+    },
+
+    "core_doubly_linked_list": {
+        TYPE: "class",
+        DEF: "DoublyLinkedList",
+        PROPERTIES: [
+            LENGTH_PROPERTY,
+        ],
+        METHODS: LIST_INTERFACE,
+    },
+
+    # Element of Programming Interviews
 
     "array_dutch_flag_partition": {
         TYPE: "function",
@@ -157,7 +227,7 @@ modules = {
         TYPE: "function",
         DEF: "rotate_matrix",
         ARGS: "square_matrix",
-        RETURN: "list",
+        RETURN: "None",
     },
 
     "multi_dim_array_generate_pascal_triangle": {
@@ -167,70 +237,25 @@ modules = {
         RETURN: "list",
     },
 
-    "queue": {
-        TYPE: "class",
-        DEF: "Queue",
-        PROPERTIES: [
-            LENGTH_PROPERTY,
-        ],
-        METHODS: [{ 
-            DEF: "enqueue",
-            ARGS: "item",
-            RETURN: "None",
-        }, {
-            DEF: "deque",
-            ARGS: "",
-            RETURN: "None",
-            }, {
-            DEF: "peek",
-            RETURN: "None",
-            ARGS: "",
-        }]
-    },
-
-    "stack": {
-        TYPE: "class",
-        DEF: "Stack",
-        PROPERTIES: [
-            LENGTH_PROPERTY,
-        ],
-        METHODS: [{ 
-            DEF: "push",
-            ARGS: "item",
-            RETURN: "None",
-        }, {
-            DEF: "pop",
-            ARGS: "",
-            RETURN: "None",
-            }, {
-            DEF: "peek",
-            RETURN: "None",
-            ARGS: "",
-        }]
-    },
-
-    "maze_solver": {
+    "string_int_to_string": {
         TYPE: "function",
-        DEF: "solve",
-        ARGS: "maze, wall, start, end",
-        RETURN: "None",
-
+        DEF: "int_to_string",
+        ARGS: "x",
+        RETURN: "str",
     },
 
-    "quick_sort": {
+    "string_string_to_int": {
         TYPE: "function",
-        DEF: "quick_sort",
-        ARGS: "arr",
-        RETURN: "None",
+        DEF: "string_to_int",
+        ARGS: "s",
+        RETURN: "int",
     },
 
-    "doubly_linked_list": {
-        TYPE: "class",
-        DEF: "DoublyLinkedList",
-        PROPERTIES: [
-            LENGTH_PROPERTY,
-        ],
-        METHODS: LIST_INTERFACE,
-    }
+    "string_convert_base": {
+        TYPE: "function",
+        DEF: "convert_base",
+        ARGS: "num_as_string, b1, b2",
+        RETURN: "str",
+    },
 }
 

@@ -18,9 +18,11 @@ def generate_method(props):
     content = "return"
     if dsa.RETURN in props:
         if props[dsa.RETURN] == "bool":
-            content = "return False" 
+            content = "return bool()" 
         elif props[dsa.RETURN] == "int":
-            content = "return 0"
+            content = "return int()"
+        elif props[dsa.RETURN] == "str":
+            content = "return str()"
         elif props[dsa.RETURN] == "list":
             content = "return list()"
 
