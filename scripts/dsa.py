@@ -257,5 +257,26 @@ modules = {
         ARGS: "num_as_string, b1, b2",
         RETURN: "str",
     },
+
+    "string_ss_decode_col_id": {
+        TYPE: "function",
+        DEF: "ss_decode_col_id",
+        ARGS: "col",
+        RETURN: "int",
+    },
+
+    "string_replace_and_remove": {
+        TYPE: "function",
+        DEF: "replace_and_remove",
+        ARGS: "size, s",
+        RETURN: "int",
+    },
+
+    "string_is_palindrome": {
+        TYPE: "function",
+        DEF: "is_palindrome",
+        ARGS: "s",
+        RETURN: "bool",
+    },
 }
 
