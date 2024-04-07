@@ -278,5 +278,54 @@ modules = {
         ARGS: "s",
         RETURN: "bool",
     },
+
+    "string_reverse_words": {
+        TYPE: "function",
+        DEF: "reverse_words",
+        ARGS: "s",
+        RETURN: "None",
+    },
+
+    "string_look_and_say": {
+        TYPE: "function",
+        DEF: "look_and_say",
+        ARGS: "n",
+        RETURN: "str",
+    },
+
+    "string_roman_to_integer": {
+        TYPE: "function",
+        DEF: "roman_to_integer",
+        ARGS: "s",
+        RETURN: "int",
+    },
+
+    "string_snake_string": {
+        TYPE: "function",
+        DEF: "snake_string",
+        ARGS: "s",
+        RETURN: "str",
+    },
+
+    "string_string_decoding": {
+        TYPE: "function",
+        DEF: "string_decoding",
+        ARGS: "s",
+        RETURN: "str",
+    },
+
+    "string_string_encoding": {
+        TYPE: "function",
+        DEF: "string_encoding",
+        ARGS: "s",
+        RETURN: "str",
+    },
+
+    "string_rabin_karp": {
+        TYPE: "function",
+        DEF: "rabin_karp",
+        ARGS: "t, s",
+        RETURN: "int",
+    },
 }
 
