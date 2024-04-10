@@ -348,7 +348,7 @@ modules = {
         TYPE: "function",
         IMPORT: ["from common import ListNode"],
         DEF: "has_cycle",
-        ARGS: "L, start, finish",
+        ARGS: "L",
         RETURN: "ListNode",
     },
 
