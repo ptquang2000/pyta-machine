@@ -25,6 +25,8 @@ def generate_method(props):
             content = "return str()"
         elif props[dsa.RETURN] == "list":
             content = "return list()"
+        elif props[dsa.RETURN] == "ListNode":
+            content = "return ListNode()"
 
     request_pkgs = ''
     if dsa.IMPORT in props:
@@ -66,6 +68,7 @@ def add_import_pkg(pkg, att):
 from {today_dir}.{pkg} import {att}
     '''
 
+# NOTE: generate day{nth}/*.py
 os.chdir(today_path)
 for module, props in dsa.modules.items():
     module_path = os.path.join(today_path, f"{module}.py")
@@ -75,6 +78,7 @@ for module, props in dsa.modules.items():
         elif props[dsa.TYPE] == "class":
             f.write(generate_class(props))
     
+# NOTE: generate test/__init__.py
 os.chdir(test_path)
 test_init_file = os.path.join(test_path, "__init__.py")
 with open(test_init_file, 'w') as f:

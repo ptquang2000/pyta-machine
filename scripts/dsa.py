@@ -327,5 +327,13 @@ modules = {
         ARGS: "t, s",
         RETURN: "int",
     },
+
+    "linked_lists_merge_two_sorted_lists": {
+        TYPE: "function",
+        IMPORT: ["from common import ListNode"],
+        DEF: "merge_two_sorted_lists",
+        ARGS: "L1, L2",
+        RETURN: "ListNode",
+    },
 }
 
