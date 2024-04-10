@@ -335,5 +335,29 @@ modules = {
         ARGS: "L1, L2",
         RETURN: "ListNode",
     },
+
+    "linked_lists_reverse_sublist": {
+        TYPE: "function",
+        IMPORT: ["from common import ListNode"],
+        DEF: "reverse_sublist",
+        ARGS: "L, start, finish",
+        RETURN: "ListNode",
+    },
+
+    "linked_lists_has_cycle": {
+        TYPE: "function",
+        IMPORT: ["from common import ListNode"],
+        DEF: "has_cycle",
+        ARGS: "L, start, finish",
+        RETURN: "ListNode",
+    },
+
+    "linked_lists_overlapping_no_cycle_lists": {
+        TYPE: "function",
+        IMPORT: ["from common import ListNode"],
+        DEF: "overlapping_no_cycle_lists",
+        ARGS: "L1, L2",
+        RETURN: "ListNode",
+    },
 }
 

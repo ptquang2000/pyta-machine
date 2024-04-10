@@ -4,5 +4,38 @@ from common.list_node import *
 
 class TestMergeTwoSortedLists(unittest.TestCase):
     def test_merge_two_sorted_lists(self):
-        ListNode()
-        self.assertEqual(0, 0)
+        node = ListNode(4)
+        node = ListNode(2, node)
+        L1 = ListNode(1, node)
+        node = ListNode(4)
+        node = ListNode(3, node)
+        L2 = ListNode(1, node)
+        head = merge_two_sorted_lists(L1, L2)
+        result = list()
+        for i in range(6):
+            result.append(head.data)
+            head = head.next
+        self.assertEqual(result, [1,1,2,3,4,4])
+
+        node = ListNode(7)
+        node = ListNode(5, node)
+        L1 = ListNode(2, node)
+        node = ListNode(11)
+        L2 = ListNode(3, node)
+        head = merge_two_sorted_lists(L1, L2)
+        result = list()
+        for i in range(5):
+            result.append(head.data)
+            head = head.next
+        self.assertEqual(result, [2,3,5,7,11])
+
+        head = merge_two_sorted_lists(None, None)
+        self.assertEqual(head, None)
+
+        node = ListNode(0)
+        head = merge_two_sorted_lists(None, None)
+        result = list()
+        for i in range(1):
+            result.append(head.data)
+            head = head.next
+        self.assertEqual(result, [0])
