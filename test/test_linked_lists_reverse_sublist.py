@@ -11,8 +11,9 @@ class TestReverseSublist(unittest.TestCase):
         L = ListNode(1, node)
         head = reverse_sublist(L, 2, 4)
         result = list()
-        for i in range(5):
+        while head:
             result.append(head.data)
+            self.assertEqual(len(result) <= 5, True)
             head = head.next
         self.assertEqual(result, [1,4,3,2,5])
 
@@ -23,15 +24,17 @@ class TestReverseSublist(unittest.TestCase):
         L = ListNode(11, node)
         head = reverse_sublist(L, 2, 4)
         result = list()
-        for i in range(5):
+        while head:
             result.append(head.data)
+            self.assertEqual(len(result) <= 5, True)
             head = head.next
         self.assertEqual(result, [11,7,5,3,2])
 
         L = ListNode(5, None)
         head = reverse_sublist(L, 1, 1)
         result = list()
-        for i in range(1):
+        while head:
             result.append(head.data)
+            self.assertEqual(len(result) <= 1, True)
             head = head.next
         self.assertEqual(result, [5])

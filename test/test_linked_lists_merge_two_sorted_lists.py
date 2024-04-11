@@ -12,8 +12,9 @@ class TestMergeTwoSortedLists(unittest.TestCase):
         L2 = ListNode(1, node)
         head = merge_two_sorted_lists(L1, L2)
         result = list()
-        for i in range(6):
+        while head:
             result.append(head.data)
+            self.assertEqual(len(result) <= 6, True)
             head = head.next
         self.assertEqual(result, [1,1,2,3,4,4])
 
@@ -24,18 +25,20 @@ class TestMergeTwoSortedLists(unittest.TestCase):
         L2 = ListNode(3, node)
         head = merge_two_sorted_lists(L1, L2)
         result = list()
-        for i in range(5):
+        while head:
             result.append(head.data)
+            self.assertEqual(len(result) <= 5, True)
             head = head.next
         self.assertEqual(result, [2,3,5,7,11])
 
         head = merge_two_sorted_lists(None, None)
         self.assertEqual(head, None)
 
-        node = ListNode(0)
-        head = merge_two_sorted_lists(None, None)
+        L2 = ListNode(0)
+        head = merge_two_sorted_lists(None, L2)
         result = list()
-        for i in range(1):
+        while head:
             result.append(head.data)
+            self.assertEqual(len(result) <= 1, True)
             head = head.next
         self.assertEqual(result, [0])
