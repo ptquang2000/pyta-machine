@@ -14,7 +14,7 @@ class TestIsValidSudoku(unittest.TestCase):
             [0,0,0,4,1,9,0,0,5],
             [0,0,0,0,8,0,0,7,9],
         ]
-        self.assertEqual(is_valid_sudoku(partial_sudoku), False)
+        self.assertFalse(is_valid_sudoku(partial_sudoku))
         completed_sudoku = [
             [5,3,4,6,7,8,9,1,2],
             [6,7,2,1,9,5,3,4,8],
@@ -26,7 +26,7 @@ class TestIsValidSudoku(unittest.TestCase):
             [2,8,7,4,1,9,6,3,5],
             [3,4,5,2,8,6,1,7,9],
         ]
-        self.assertEqual(is_valid_sudoku(completed_sudoku), True)
+        self.assertTrue(is_valid_sudoku(completed_sudoku))
         completed_sudoku = [
             [5,3,4,6,7,8,9,1,2],
             [6,7,2,1,9,5,3,4,8],
@@ -38,4 +38,4 @@ class TestIsValidSudoku(unittest.TestCase):
             [2,8,7,4,1,9,6,3,5],
             [3,4,5,2,8,6,1,7,9],
         ]
-        self.assertEqual(is_valid_sudoku(completed_sudoku), False)
+        self.assertFalse(is_valid_sudoku(completed_sudoku))

@@ -13,7 +13,7 @@ class TestReverseSublist(unittest.TestCase):
         result = list()
         while head:
             result.append(head.data)
-            self.assertEqual(len(result) <= 5, True)
+            self.assertTrue(len(result) <= 5)
             head = head.next
         self.assertEqual(result, [1,4,3,2,5])
 
@@ -26,7 +26,7 @@ class TestReverseSublist(unittest.TestCase):
         result = list()
         while head:
             result.append(head.data)
-            self.assertEqual(len(result) <= 5, True)
+            self.assertTrue(len(result) <= 5)
             head = head.next
         self.assertEqual(result, [11,7,5,3,2])
 
@@ -35,6 +35,6 @@ class TestReverseSublist(unittest.TestCase):
         result = list()
         while head:
             result.append(head.data)
-            self.assertEqual(len(result) <= 1, True)
+            self.assertTrue(len(result) <= 1)
             head = head.next
         self.assertEqual(result, [5])

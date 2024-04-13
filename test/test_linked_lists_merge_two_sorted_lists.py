@@ -14,7 +14,7 @@ class TestMergeTwoSortedLists(unittest.TestCase):
         result = list()
         while head:
             result.append(head.data)
-            self.assertEqual(len(result) <= 6, True)
+            self.assertTrue(len(result) <= 6)
             head = head.next
         self.assertEqual(result, [1,1,2,3,4,4])
 
@@ -27,7 +27,7 @@ class TestMergeTwoSortedLists(unittest.TestCase):
         result = list()
         while head:
             result.append(head.data)
-            self.assertEqual(len(result) <= 5, True)
+            self.assertTrue(len(result) <= 5)
             head = head.next
         self.assertEqual(result, [2,3,5,7,11])
 
@@ -39,6 +39,6 @@ class TestMergeTwoSortedLists(unittest.TestCase):
         result = list()
         while head:
             result.append(head.data)
-            self.assertEqual(len(result) <= 1, True)
+            self.assertTrue(len(result) <= 1)
             head = head.next
         self.assertEqual(result, [0])
