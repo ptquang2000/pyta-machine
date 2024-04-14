@@ -13,7 +13,7 @@ class TestOverlappingNoCycleLists(unittest.TestCase):
         node = ListNode(6, node)
         L2 = ListNode(5, node)
         result = overlapping_no_cycle_lists(L1, L2)
-        self.assertEqual(id(result), id(L3))
+        self.assertIs(result, L3)
 
         node = ListNode(4)
         L3 = ListNode(2, node)
@@ -22,7 +22,7 @@ class TestOverlappingNoCycleLists(unittest.TestCase):
         L1 = ListNode(1, node)
         L2 = ListNode(3, L3)
         result = overlapping_no_cycle_lists(L1, L2)
-        self.assertEqual(id(result), id(L3))
+        self.assertIs(result, L3)
 
         node = ListNode(4)
         node = ListNode(6)
@@ -30,4 +30,4 @@ class TestOverlappingNoCycleLists(unittest.TestCase):
         node = ListNode(5)
         L2 = ListNode(1, node)
         result = overlapping_no_cycle_lists(L1, L2)
-        self.assertEqual(result, None)
+        self.assertIsNone(result)

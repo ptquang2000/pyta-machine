@@ -359,5 +359,76 @@ modules = {
         ARGS: "L1, L2",
         RETURN: "ListNode",
     },
+
+    "linked_lists_overlapping_lists": {
+        TYPE: "function",
+        IMPORT: ["from common import ListNode"],
+        DEF: "overlapping_lists",
+        ARGS: "L1, L2",
+        RETURN: "ListNode",
+    },
+
+    "linked_lists_deletion_from_list": {
+        TYPE: "function",
+        DEF: "deletion_from_list",
+        ARGS: "node_to_delete",
+        RETURN: "None",
+    },
+
+    "linked_lists_remove_kth_last": {
+        TYPE: "function",
+        IMPORT: ["from common import ListNode"],
+        DEF: "remove_kth_last",
+        ARGS: "L, k",
+        RETURN: "ListNode",
+    },
+
+    "linked_lists_remove_duplicates": {
+        TYPE: "function",
+        IMPORT: ["from common import ListNode"],
+        DEF: "remove_duplicates",
+        ARGS: "L",
+        RETURN: "ListNode",
+    },
+
+    "linked_lists_cyclically_right_shift_list": {
+        TYPE: "function",
+        IMPORT: ["from common import ListNode"],
+        DEF: "cyclically_right_shift_list",
+        ARGS: "L, k",
+        RETURN: "ListNode",
+    },
+
+    "linked_lists_even_odd_merge": {
+        TYPE: "function",
+        IMPORT: ["from common import ListNode"],
+        DEF: "even_odd_merge",
+        ARGS: "L",
+        RETURN: "ListNode",
+    },
+
+    "linked_lists_is_linked_list_a_palindrome": {
+        TYPE: "function",
+        IMPORT: ["from common import ListNode"],
+        DEF: "is_linked_list_a_palindrome",
+        ARGS: "L",
+        RETURN: "bool",
+    },
+
+    "linked_lists_list_pivoting": {
+        TYPE: "function",
+        IMPORT: ["from common import ListNode"],
+        DEF: "list_pivoting",
+        ARGS: "L, x",
+        RETURN: "ListNode",
+    },
+
+    "linked_lists_add_two_numbers": {
+        TYPE: "function",
+        IMPORT: ["from common import ListNode"],
+        DEF: "add_two_numbers",
+        ARGS: "L1, L2",
+        RETURN: "ListNode",
+    },
 }
 

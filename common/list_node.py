@@ -14,3 +14,12 @@ def insert_after(node, new_node):
 
 def delete_after(node):
    node.next = node.next.next
+
+def to_list(self, L, length):
+   result = list()
+   while L:
+       result.append(L.data)
+       self.assertTrue(len(result) <= length)
+       L = L.next
+   self.assertTrue(len(result) == length)
+   return result
