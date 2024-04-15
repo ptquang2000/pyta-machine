@@ -25,3 +25,6 @@ class TestCyclicallyRightShiftList(unittest.TestCase):
         L = ListNode(0, node)
         head = cyclically_right_shift_list(L, 4)
         self.assertEqual(to_list(self, head, 3), [2,0,1])
+
+        head = cyclically_right_shift_list(None, 4)
+        self.assertIsNone(head)

@@ -22,3 +22,6 @@ class TestEvenOddMerge(unittest.TestCase):
         head = even_odd_merge(L)
         self.assertEqual(to_list(self, head, 7), [2,3,6,7,1,5,4])
 
+        head = even_odd_merge(None)
+        self.assertIsNone(head)
+
