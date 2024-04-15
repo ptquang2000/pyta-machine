@@ -34,7 +34,7 @@ class TestAddTwoNumbers(unittest.TestCase):
         node = ListNode(9,node)
         node = ListNode(9,node)
         L1 = ListNode(9,node)
-        node = ListNode(9,node)
+        node = ListNode(9,None)
         node = ListNode(9,node)
         node = ListNode(9,node)
         L2 = ListNode(9,node)
