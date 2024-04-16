@@ -15,11 +15,11 @@ def insert_after(node, new_node):
 def delete_after(node):
    node.next = node.next.next
 
-def to_list(self, L, length):
+def to_list(test_case, L, length):
    result = list()
    while L:
-       result.append(L.data)
-       self.assertTrue(len(result) <= length)
-       L = L.next
-   self.assertTrue(len(result) == length)
+      result.append(L.data)
+      test_case.assertTrue(len(result) <= length, msg=f"{result} exceeds expected length = {length}")
+      L = L.next
+   test_case.assertTrue(len(result) == length, msg=f"{result} has length {len(result)} while expecting length = {length}")
    return result

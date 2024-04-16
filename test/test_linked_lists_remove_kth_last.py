@@ -10,14 +10,14 @@ class TestRemoveKthLast(unittest.TestCase):
         node = ListNode(2, node)
         L = ListNode(1, node)
         head = remove_kth_last(L, 2)
-        self.assertEqual(to_list(self, L, 4), [1,2,3,5])
+        self.assertEqual(to_list(self, head, 4), [1,2,3,5])
 
         L = ListNode(1, None)
         head = remove_kth_last(L, 1)
-        self.assertEqual(to_list(self, L, 0), [])
+        self.assertEqual(to_list(self, head, 0), [])
 
         node = ListNode(2, None)
         L = ListNode(1, node)
         head = remove_kth_last(L, 1)
-        self.assertEqual(to_list(self, L, 1), [1])
+        self.assertEqual(to_list(self, head, 1), [1])
         
