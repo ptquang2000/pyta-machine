@@ -430,5 +430,33 @@ modules = {
         ARGS: "L1, L2",
         RETURN: "ListNode",
     },
+
+    "stack_evaluate_rpn_expression": {
+        TYPE: "function",
+        DEF: "evaluate",
+        ARGS: "RPN_expression",
+        RETURN: "int",
+    },
+
+    "stack_is_well_formed": {
+        TYPE: "function",
+        DEF: "is_well_formed",
+        ARGS: "s",
+        RETURN: "bool",
+    },
+
+    "stack_shortest_equivalent_path": {
+        TYPE: "function",
+        DEF: "shortest_equivalent_path",
+        ARGS: "path",
+        RETURN: "str",
+    },
+
+    "stack_examine_buildings_with_sunset": {
+        TYPE: "function",
+        DEF: "examine_building_with_sunset",
+        ARGS: "sequence",
+        RETURN: "list",
+    },
 }
 
