@@ -25,6 +25,8 @@ def generate_method(props):
             content = "return str()"
         elif props[dsa.RETURN] == "list":
             content = "return list()"
+        elif props[dsa.RETURN] == "tuple":
+            content = "return tuple()"
         elif props[dsa.RETURN] == "ListNode":
             content = "return ListNode()"
 

@@ -454,9 +454,51 @@ modules = {
 
     "stack_examine_buildings_with_sunset": {
         TYPE: "function",
-        DEF: "examine_building_with_sunset",
+        DEF: "examine_buildings_with_sunset",
         ARGS: "sequence",
         RETURN: "list",
+    },
+
+    "recursion_n_queens": {
+        TYPE: "function",
+        DEF: "n_queens",
+        ARGS: "n",
+        RETURN: "list",
+    },
+
+    "recursion_permutations": {
+        TYPE: "function",
+        DEF: "permutations",
+        ARGS: "A",
+        RETURN: "list",
+    },
+
+    "recursion_generate_power_set": {
+        TYPE: "function",
+        DEF: "generate_power_set",
+        ARGS: "input_set",
+        RETURN: "list",
+    },
+
+    "recursion_combinations": {
+        TYPE: "function",
+        DEF: "combinations",
+        ARGS: "n, k",
+        RETURN: "list",
+    },
+
+    "recursion_generate_balanced_parentheses": {
+        TYPE: "function",
+        DEF: "generate_balanced_parentheses",
+        ARGS: "num_pairs",
+        RETURN: "list",
+    },
+
+    "recursion_solve_sudoku": {
+        TYPE: "function",
+        DEF: "solve_sudoku",
+        ARGS: "partial_assignment",
+        RETURN: "bool",
     },
 }
 
