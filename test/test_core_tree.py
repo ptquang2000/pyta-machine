@@ -1,0 +1,43 @@
+from common import BinaryNode
+
+tree = BinaryNode(
+    value=20,
+    left=BinaryNode(
+        value=10,
+        left=BinaryNode(
+            value=5,
+            left=None,
+            right=BinaryNode(
+                value=7,
+                left=None,
+                right=None
+            )
+        ),
+        right=BinaryNode(
+            value=15,
+            left=None,
+            right=None
+        )
+    ),
+    right=BinaryNode(
+        value=50,
+        left=BinaryNode(
+            value=30,
+            left=BinaryNode(
+                value=29,
+                left=None,
+                right=None
+            ),
+            right=BinaryNode(
+                value=45,
+                left=None,
+                right=None
+            )
+        ),
+        right=BinaryNode(
+            value=100,
+            left=None,
+            right=None
+        )
+    )
+)

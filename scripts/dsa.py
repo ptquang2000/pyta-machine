@@ -136,6 +136,46 @@ modules = {
         ],
         METHODS: LIST_INTERFACE,
     },
+    
+    "core_bt_pre_order": {
+        TYPE: "function",
+        IMPORT: ["from common import BinaryNode"],
+        DEF: "pre_order_search",
+        ARGS: "head",
+        RETURN: "list"
+    },
+    
+    "core_bt_in_order": {
+        TYPE: "function",
+        IMPORT: ["from common import BinaryNode"],
+        DEF: "in_order_search",
+        ARGS: "head",
+        RETURN: "list"
+    },
+    
+    "core_bt_post_order": {
+        TYPE: "function",
+        IMPORT: ["from common import BinaryNode"],
+        DEF: "post_order_search",
+        ARGS: "head",
+        RETURN: "list"
+    },
+    
+    "core_bt_bfs": {
+        TYPE: "function",
+        IMPORT: ["from common import BinaryNode"],
+        DEF: "bt_bfs",
+        ARGS: "head, needle",
+        RETURN: "bool"
+    },
+    
+    "core_compare_binary_trees": {
+        TYPE: "function",
+        IMPORT: ["from common import BinaryNode"],
+        DEF: "compare",
+        ARGS: "a, b",
+        RETURN: "bool"
+    },
 
     # Element of Programming Interviews
 
