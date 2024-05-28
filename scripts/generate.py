@@ -15,20 +15,21 @@ except FileExistsError:
     exit(1)
 
 def generate_method(props):
-    content = "return"
-    if dsa.RETURN in props:
-        if props[dsa.RETURN] == "bool":
-            content = "return bool()" 
-        elif props[dsa.RETURN] == "int":
-            content = "return int()"
-        elif props[dsa.RETURN] == "str":
-            content = "return str()"
-        elif props[dsa.RETURN] == "list":
-            content = "return list()"
-        elif props[dsa.RETURN] == "tuple":
-            content = "return tuple()"
-        elif props[dsa.RETURN] == "ListNode":
-            content = "return ListNode()"
+    #content = "return"
+    #if dsa.RETURN in props:
+    #    if props[dsa.RETURN] == "bool":
+    #        content = "return bool()" 
+    #    elif props[dsa.RETURN] == "int":
+    #        content = "return int()"
+    #    elif props[dsa.RETURN] == "str":
+    #        content = "return str()"
+    #    elif props[dsa.RETURN] == "list":
+    #        content = "return list()"
+    #    elif props[dsa.RETURN] == "tuple":
+    #        content = "return tuple()"
+    #    elif props[dsa.RETURN] == "ListNode":
+    #        content = "return ListNode()"
+    return_type = props[dsa.RETURN] if dsa.RETURN in props else "None"
 
     request_pkgs = ''
     if dsa.IMPORT in props:
@@ -36,8 +37,8 @@ def generate_method(props):
             request_pkgs += f"{pkg}\n"
 
     return f'''{request_pkgs}
-def {props[dsa.DEF]}({props[dsa.ARGS]}):
-    {content}
+def {props[dsa.DEF]}({props[dsa.ARGS]}) -> {return_type}:
+    return
     '''
 
 def generate_class(props):

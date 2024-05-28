@@ -2,42 +2,88 @@ from common import BinaryNode
 
 tree = BinaryNode(
     value=20,
-    left=BinaryNode(
-        value=10,
-        left=BinaryNode(
-            value=5,
-            left=None,
-            right=BinaryNode(
-                value=7,
-                left=None,
-                right=None
-            )
-        ),
-        right=BinaryNode(
-            value=15,
-            left=None,
-            right=None
-        )
-    ),
     right=BinaryNode(
         value=50,
-        left=BinaryNode(
-            value=30,
-            left=BinaryNode(
-                value=29,
-                left=None,
-                right=None
-            ),
-            right=BinaryNode(
-                value=45,
-                left=None,
-                right=None
-            )
-        ),
         right=BinaryNode(
             value=100,
-            left=None,
-            right=None
+            right=None,
+            left=None
+        ),
+        left=BinaryNode(
+            value=30,
+            right=BinaryNode(
+                value=45,
+                right=None,
+                left=None
+            ),
+            left=BinaryNode(
+                value=29,
+                right=None,
+                left=None
+            )
+        )
+    ),
+    left=BinaryNode(
+        value=10,
+        right=BinaryNode(
+            value=15,
+            right=None,
+            left=None
+        ),
+        left=BinaryNode(
+            value=5,
+            right=BinaryNode(
+                value=7,
+                right=None,
+                left=None
+            ),
+            left=None
+        )
+    )
+)
+
+tree2 = BinaryNode(
+    value=20,
+    right=BinaryNode(
+        value=50,
+        right=None,
+        left=BinaryNode(
+            value=30,
+            right=BinaryNode(
+                value=45,
+                right=BinaryNode(
+                    value=49,
+                    right=None,
+                    left=None
+                ),
+                left=None
+            ),
+            left=BinaryNode(
+                value=29,
+                right=None,
+                left=BinaryNode(
+                    value=21,
+                    right=None,
+                    left=None
+                )
+            )
+        )
+    ),
+    left=BinaryNode(
+        value=10,
+        right=BinaryNode(
+            value=15,
+            right=None,
+            left=None
+        ),
+        left=BinaryNode(
+            value=5,
+            right=BinaryNode(
+                value=7,
+                right=None,
+                left=None
+            ),
+            left=None
         )
     )
 )

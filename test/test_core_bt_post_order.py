@@ -1,10 +1,10 @@
 from unittest import TestCase
-from test import bt_post_order
+from test import post_order_search
 from test.test_core_tree import tree
 
 class TestBTPostOrder(TestCase):
     def test_bt_post_order(self):
-        self.assertEqual(bt_post_order(tree), [
+        self.assertEqual(post_order_search(tree), [
             7,
             5,
             15,
@@ -15,4 +15,4 @@ class TestBTPostOrder(TestCase):
             100,
             50,
             20,
-        ]
+        ])

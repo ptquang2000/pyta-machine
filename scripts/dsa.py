@@ -46,28 +46,28 @@ modules = {
     "core_linear_search_list": {
         TYPE: "function",
         DEF: "linear_search",
-        ARGS: "haystack, needle",
+        ARGS: "haystack: list[int], needle: int",
         RETURN: "bool",
     },
 
     "core_binary_search_list": {
         TYPE: "function",
         DEF: "binary_search",
-        ARGS: "haystack, needle",
+        ARGS: "haystack: list[int], needle: int",
         RETURN: "bool",
     },
 
     "core_two_crystal_balls": {
         TYPE: "function",
         DEF: "two_crystal_balls",
-        ARGS: "breaks",
+        ARGS: "breaks: list[bool]",
         RETURN: "int",
     },
 
     "core_bubble_sort": {
         TYPE: "function",
         DEF: "bubble_sort",
-        ARGS: "arr",
+        ARGS: "arr: list[int]",
         RETURN: "None",
     },
 
@@ -124,7 +124,7 @@ modules = {
     "core_quick_sort": {
         TYPE: "function",
         DEF: "quick_sort",
-        ARGS: "arr",
+        ARGS: "arr: list[int]",
         RETURN: "None",
     },
 
@@ -136,44 +136,44 @@ modules = {
         ],
         METHODS: LIST_INTERFACE,
     },
-    
+
     "core_bt_pre_order": {
         TYPE: "function",
         IMPORT: ["from common import BinaryNode"],
         DEF: "pre_order_search",
-        ARGS: "head",
-        RETURN: "list"
+        ARGS: "head: BinaryNode",
+        RETURN: "list[int]"
     },
-    
+
     "core_bt_in_order": {
         TYPE: "function",
         IMPORT: ["from common import BinaryNode"],
         DEF: "in_order_search",
-        ARGS: "head",
-        RETURN: "list"
+        ARGS: "head: BinaryNode",
+        RETURN: "list[int]"
     },
-    
+
     "core_bt_post_order": {
         TYPE: "function",
         IMPORT: ["from common import BinaryNode"],
         DEF: "post_order_search",
-        ARGS: "head",
-        RETURN: "list"
+        ARGS: "head: BinaryNode",
+        RETURN: "list[int]"
     },
-    
+
     "core_bt_bfs": {
         TYPE: "function",
         IMPORT: ["from common import BinaryNode"],
         DEF: "bt_bfs",
-        ARGS: "head, needle",
+        ARGS: "head: BinaryNode, needle: int",
         RETURN: "bool"
     },
-    
+
     "core_compare_binary_trees": {
         TYPE: "function",
         IMPORT: ["from common import BinaryNode"],
         DEF: "compare",
-        ARGS: "a, b",
+        ARGS: "a: BinaryNode, b: BinaryNode",
         RETURN: "bool"
     },
 
@@ -182,189 +182,189 @@ modules = {
     "array_dutch_flag_partition": {
         TYPE: "function",
         DEF: "dutch_flag_partition",
-        ARGS: "pivot_idx, A",
+        ARGS: "pivot_idx: int, A: list[int]",
         RETURN: "None",
     },
 
     "array_plus_one": {
         TYPE: "function",
         DEF: "plus_one",
-        ARGS: "A",
-        RETURN: "list",
+        ARGS: "A: list[int]",
+        RETURN: "list[int]",
     },
 
     "array_multiply": {
         TYPE: "function",
         DEF: "multiply",
-        ARGS: "num1, num2",
-        RETURN: "list",
+        ARGS: "num1: list[int], num2: list[int]",
+        RETURN: "list[int]",
     },
 
     "array_can_reach_end": {
         TYPE: "function",
         DEF: "can_reach_end",
-        ARGS: "A",
+        ARGS: "A: list[int]",
         RETURN: "bool",
     },
 
     "array_delete_duplicates": {
         TYPE: "function",
         DEF: "delete_duplicates",
-        ARGS: "A",
+        ARGS: "A: list[int]",
         RETURN: "int",
     },
 
     "array_buy_and_sell_stock_once": {
         TYPE: "function",
         DEF: "buy_and_sell_stock_once",
-        ARGS: "prices",
+        ARGS: "prices: list[int]",
         RETURN: "int",
     },
 
     "array_buy_and_sell_stock_twice": {
         TYPE: "function",
         DEF: "buy_and_sell_stock_twice",
-        ARGS: "prices",
+        ARGS: "prices: list[int]",
         RETURN: "int",
     },
 
     "array_generate_primes": {
         TYPE: "function",
         DEF: "generate_primes",
-        ARGS: "n",
-        RETURN: "list",
+        ARGS: "n: int",
+        RETURN: "list[int]",
     },
 
     "array_apply_permutation": {
         TYPE: "function",
         DEF: "apply_permutation",
-        ARGS: "perm, A",
+        ARGS: "perm: list[int], A: list[str]",
         RETURN: "None",
     },
 
     "array_next_permutation": {
         TYPE: "function",
         DEF: "next_permutation",
-        ARGS: "perm",
-        RETURN: "list",
+        ARGS: "perm: list[int]",
+        RETURN: "list[int]",
     },
 
     "multi_dim_array_is_valid_sudoku": {
         TYPE: "function",
         DEF: "is_valid_sudoku",
-        ARGS: "partial_assignment",
+        ARGS: "partial_assignment: list[list[int]]",
         RETURN: "bool",
     },
 
     "multi_dim_array_matrix_in_spiral_order": {
         TYPE: "function",
         DEF: "matrix_in_spiral_order",
-        ARGS: "square_matrix",
-        RETURN: "list",
+        ARGS: "square_matrix: list[list[int]]",
+        RETURN: "list[int]",
     },
 
     "multi_dim_array_rotate_matrix": {
         TYPE: "function",
         DEF: "rotate_matrix",
-        ARGS: "square_matrix",
+        ARGS: "square_matrix: list[list[int]]",
         RETURN: "None",
     },
 
     "multi_dim_array_generate_pascal_triangle": {
         TYPE: "function",
         DEF: "generate_pascal_triangle",
-        ARGS: "n",
-        RETURN: "list",
+        ARGS: "n: int",
+        RETURN: "list[list[int]]",
     },
 
     "string_int_to_string": {
         TYPE: "function",
         DEF: "int_to_string",
-        ARGS: "x",
+        ARGS: "x: int",
         RETURN: "str",
     },
 
     "string_string_to_int": {
         TYPE: "function",
         DEF: "string_to_int",
-        ARGS: "s",
+        ARGS: "s: str",
         RETURN: "int",
     },
 
     "string_convert_base": {
         TYPE: "function",
         DEF: "convert_base",
-        ARGS: "num_as_string, b1, b2",
+        ARGS: "num_as_string: str, b1: int, b2: int",
         RETURN: "str",
     },
 
     "string_ss_decode_col_id": {
         TYPE: "function",
         DEF: "ss_decode_col_id",
-        ARGS: "col",
+        ARGS: "col: str",
         RETURN: "int",
     },
 
     "string_replace_and_remove": {
         TYPE: "function",
         DEF: "replace_and_remove",
-        ARGS: "size, s",
+        ARGS: "size: int, s: list[str]",
         RETURN: "int",
     },
 
     "string_is_palindrome": {
         TYPE: "function",
         DEF: "is_palindrome",
-        ARGS: "s",
+        ARGS: "s: str",
         RETURN: "bool",
     },
 
     "string_reverse_words": {
         TYPE: "function",
         DEF: "reverse_words",
-        ARGS: "s",
+        ARGS: "s: list[str]",
         RETURN: "None",
     },
 
     "string_look_and_say": {
         TYPE: "function",
         DEF: "look_and_say",
-        ARGS: "n",
+        ARGS: "n: int",
         RETURN: "str",
     },
 
     "string_roman_to_integer": {
         TYPE: "function",
         DEF: "roman_to_integer",
-        ARGS: "s",
+        ARGS: "s: str",
         RETURN: "int",
     },
 
     "string_snake_string": {
         TYPE: "function",
         DEF: "snake_string",
-        ARGS: "s",
+        ARGS: "s: str",
         RETURN: "str",
     },
 
     "string_string_decoding": {
         TYPE: "function",
         DEF: "string_decoding",
-        ARGS: "s",
+        ARGS: "s: str",
         RETURN: "str",
     },
 
     "string_string_encoding": {
         TYPE: "function",
         DEF: "string_encoding",
-        ARGS: "s",
+        ARGS: "s: str",
         RETURN: "str",
     },
 
     "string_rabin_karp": {
         TYPE: "function",
         DEF: "rabin_karp",
-        ARGS: "t, s",
+        ARGS: "t: str, s: str",
         RETURN: "int",
     },
 
@@ -372,7 +372,7 @@ modules = {
         TYPE: "function",
         IMPORT: ["from common import ListNode"],
         DEF: "merge_two_sorted_lists",
-        ARGS: "L1, L2",
+        ARGS: "L1: ListNode, L2: ListNode",
         RETURN: "ListNode",
     },
 
@@ -380,7 +380,7 @@ modules = {
         TYPE: "function",
         IMPORT: ["from common import ListNode"],
         DEF: "reverse_sublist",
-        ARGS: "L, start, finish",
+        ARGS: "L: ListNode, start: int, finish: int",
         RETURN: "ListNode",
     },
 
@@ -388,7 +388,7 @@ modules = {
         TYPE: "function",
         IMPORT: ["from common import ListNode"],
         DEF: "has_cycle",
-        ARGS: "head",
+        ARGS: "head: ListNode",
         RETURN: "ListNode",
     },
 
@@ -396,7 +396,7 @@ modules = {
         TYPE: "function",
         IMPORT: ["from common import ListNode"],
         DEF: "overlapping_no_cycle_lists",
-        ARGS: "L1, L2",
+        ARGS: "L1: ListNode, L2: ListNode",
         RETURN: "ListNode",
     },
 
@@ -404,14 +404,15 @@ modules = {
         TYPE: "function",
         IMPORT: ["from common import ListNode"],
         DEF: "overlapping_lists",
-        ARGS: "L1, L2",
+        ARGS: "L1: ListNode, L2: ListNode",
         RETURN: "ListNode",
     },
 
     "linked_lists_deletion_from_list": {
         TYPE: "function",
+        IMPORT: ["from common import ListNode"],
         DEF: "deletion_from_list",
-        ARGS: "node_to_delete",
+        ARGS: "node_to_delete: ListNode",
         RETURN: "None",
     },
 
@@ -419,7 +420,7 @@ modules = {
         TYPE: "function",
         IMPORT: ["from common import ListNode"],
         DEF: "remove_kth_last",
-        ARGS: "L, k",
+        ARGS: "L: ListNode, k: int",
         RETURN: "ListNode",
     },
 
@@ -427,7 +428,7 @@ modules = {
         TYPE: "function",
         IMPORT: ["from common import ListNode"],
         DEF: "remove_duplicates",
-        ARGS: "L",
+        ARGS: "L: ListNode",
         RETURN: "ListNode",
     },
 
@@ -435,7 +436,7 @@ modules = {
         TYPE: "function",
         IMPORT: ["from common import ListNode"],
         DEF: "cyclically_right_shift_list",
-        ARGS: "L, k",
+        ARGS: "L: ListNode, k: int",
         RETURN: "ListNode",
     },
 
@@ -443,7 +444,7 @@ modules = {
         TYPE: "function",
         IMPORT: ["from common import ListNode"],
         DEF: "even_odd_merge",
-        ARGS: "L",
+        ARGS: "L: ListNode",
         RETURN: "ListNode",
     },
 
@@ -451,7 +452,7 @@ modules = {
         TYPE: "function",
         IMPORT: ["from common import ListNode"],
         DEF: "is_linked_list_a_palindrome",
-        ARGS: "L",
+        ARGS: "L: ListNode",
         RETURN: "bool",
     },
 
@@ -459,7 +460,7 @@ modules = {
         TYPE: "function",
         IMPORT: ["from common import ListNode"],
         DEF: "list_pivoting",
-        ARGS: "L, x",
+        ARGS: "L: ListNode, x: int",
         RETURN: "ListNode",
     },
 
@@ -467,77 +468,77 @@ modules = {
         TYPE: "function",
         IMPORT: ["from common import ListNode"],
         DEF: "add_two_numbers",
-        ARGS: "L1, L2",
+        ARGS: "L1: ListNode, L2: ListNode",
         RETURN: "ListNode",
     },
 
     "stack_evaluate_rpn_expression": {
         TYPE: "function",
         DEF: "evaluate",
-        ARGS: "RPN_expression",
+        ARGS: "RPN_expression: list[str]",
         RETURN: "int",
     },
 
     "stack_is_well_formed": {
         TYPE: "function",
         DEF: "is_well_formed",
-        ARGS: "s",
+        ARGS: "s: str",
         RETURN: "bool",
     },
 
     "stack_shortest_equivalent_path": {
         TYPE: "function",
         DEF: "shortest_equivalent_path",
-        ARGS: "path",
+        ARGS: "path: str",
         RETURN: "str",
     },
 
     "stack_examine_buildings_with_sunset": {
         TYPE: "function",
         DEF: "examine_buildings_with_sunset",
-        ARGS: "sequence",
-        RETURN: "list",
+        ARGS: "sequence: list[int]",
+        RETURN: "list[int]",
     },
 
     "recursion_n_queens": {
         TYPE: "function",
         DEF: "n_queens",
-        ARGS: "n",
-        RETURN: "list",
+        ARGS: "n: int",
+        RETURN: "list[list[int]]",
     },
 
     "recursion_permutations": {
         TYPE: "function",
         DEF: "permutations",
-        ARGS: "A",
-        RETURN: "list",
+        ARGS: "A: list[int]",
+        RETURN: "list[int]",
     },
 
     "recursion_generate_power_set": {
         TYPE: "function",
         DEF: "generate_power_set",
-        ARGS: "input_set",
-        RETURN: "list",
+        ARGS: "input_set: list[int]",
+        RETURN: "list[list[int]]",
     },
 
     "recursion_combinations": {
         TYPE: "function",
         DEF: "combinations",
-        ARGS: "n, k",
-        RETURN: "list",
+        ARGS: "n: int, k: int",
+        RETURN: "list[list[int]]",
     },
 
     "recursion_generate_balanced_parentheses": {
         TYPE: "function",
         DEF: "generate_balanced_parentheses",
-        ARGS: "num_pairs",
-        RETURN: "list",
+        ARGS: "num_pairs: int",
+        RETURN: "list[str]",
     },
 
     "recursion_solve_sudoku": {
         TYPE: "function",
         DEF: "solve_sudoku",
-        ARGS: "partial_assignment",
+        ARGS: "partial_assignment: list[list[int]]",
         RETURN: "bool",
     },
 }
