@@ -37,6 +37,7 @@ def generate_method(props):
             request_pkgs += f"{pkg}\n"
 
     return f'''{request_pkgs}
+
 def {props[dsa.DEF]}({props[dsa.ARGS]}) -> {return_type}:
     return
     '''

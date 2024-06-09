@@ -541,5 +541,77 @@ modules = {
         ARGS: "partial_assignment: list[list[int]]",
         RETURN: "bool",
     },
+
+    "binary_trees_is_balanced_binary_tree": {
+        TYPE: "function",
+        IMPORT: ["from typing import Optional", "from common import BinaryNode"],
+        DEF: "is_balanced_binary_tree",
+        ARGS: "tree: Optional[BinaryNode]",
+        RETURN: "bool",
+    },
+
+    "binary_trees_is_symmetric": {
+        TYPE: "function",
+        IMPORT: ["from typing import Optional", "from common import BinaryNode"],
+        DEF: "is_symmetric",
+        ARGS: "tree: Optional[BinaryNode]",
+        RETURN: "bool",
+    },
+
+    "binary_trees_lca": {
+        TYPE: "function",
+        IMPORT: ["from common import BinaryNode"],
+        DEF: "lca",
+        ARGS: "tree: BinaryNode, node0: BinaryNode, node1: BinaryNode",
+        RETURN: "BinaryNode",
+    },
+
+    "binary_trees_sum_root_to_leaf": {
+        TYPE: "function",
+        IMPORT: ["from typing import Optional", "from common import BinaryNode"],
+        DEF: "sum_root_to_leaf",
+        ARGS: "tree: Optional[BinaryNode]",
+        RETURN: "int",
+    },
+
+    "binary_trees_has_path_sum": {
+        TYPE: "function",
+        IMPORT: ["from typing import Optional", "from common import BinaryNode"],
+        DEF: "has_path_sum",
+        ARGS: "tree: Optional[BinaryNode], remaining_weight: int",
+        RETURN: "bool",
+    },
+
+    "binary_trees_inorder_traversal": {
+        TYPE: "function",
+        IMPORT: ["from common import BinaryNode"],
+        DEF: "inorder_traversal",
+        ARGS: "tree: BinaryNode",
+        RETURN: "list[BinaryNode]",
+    },
+
+    "binary_trees_preorder_traversal": {
+        TYPE: "function",
+        IMPORT: ["from common import BinaryNode"],
+        DEF: "preorder_traversal",
+        ARGS: "tree: BinaryNode",
+        RETURN: "list[BinaryNode]",
+    },
+
+    "binary_trees_find_kth_node_binary_tree": {
+        TYPE: "function",
+        IMPORT: ["from common import BinaryNode"],
+        DEF: "find_kth_node_binary_tree",
+        ARGS: "tree: BinaryNode, k: int",
+        RETURN: "Optional[BinaryNode]",
+    },
+
+    "binary_trees_find_successor": {
+        TYPE: "function",
+        IMPORT: ["from common import BinaryNode"],
+        DEF: "find_successor",
+        ARGS: "node: BinaryNode",
+        RETURN: "BinaryNode",
+    },
 }
 
