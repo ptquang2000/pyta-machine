@@ -584,18 +584,18 @@ modules = {
 
     "binary_trees_inorder_traversal": {
         TYPE: "function",
-        IMPORT: ["from common import BinaryNode"],
+        IMPORT: ["from typing import Optional", "from common import BinaryNode"],
         DEF: "inorder_traversal",
-        ARGS: "tree: BinaryNode",
-        RETURN: "list[BinaryNode]",
+        ARGS: "tree: Optional[BinaryNode]",
+        RETURN: "list[int]",
     },
 
     "binary_trees_preorder_traversal": {
         TYPE: "function",
-        IMPORT: ["from common import BinaryNode"],
+        IMPORT: ["from typing import Optional", "from common import BinaryNode"],
         DEF: "preorder_traversal",
         ARGS: "tree: BinaryNode",
-        RETURN: "list[BinaryNode]",
+        RETURN: "list[int]",
     },
 
     "binary_trees_find_kth_node_binary_tree": {
@@ -606,12 +606,28 @@ modules = {
         RETURN: "Optional[BinaryNode]",
     },
 
-    "binary_trees_find_successor": {
+    "binary_trees_binary_tree_from_preorder_inorder": {
         TYPE: "function",
-        IMPORT: ["from common import BinaryNode"],
-        DEF: "find_successor",
-        ARGS: "node: BinaryNode",
-        RETURN: "BinaryNode",
+        IMPORT: ["from typing import Optional", "from common import BinaryNode"],
+        DEF: "binary_tree_from_preorder_inorder",
+        ARGS: "preorder: list[int], inorder: list[int]",
+        RETURN: "Optional[BinaryNode]",
+    },
+
+    "binary_trees_reconstruct_preorder": {
+        TYPE: "function",
+        IMPORT: ["from typing import Optional", "from common import BinaryNode"],
+        DEF: "reconstruct_preorder",
+        ARGS: "preorder: list[int]",
+        RETURN: "Optional[BinaryNode]",
+    },
+
+    "binary_trees_create_list_of_leaves": {
+        TYPE: "function",
+        IMPORT: ["from typing import Optional", "from common import BinaryNode"],
+        DEF: "create_list_of_leaves",
+        ARGS: "tree: Optional[BinaryNode]",
+        RETURN: "list[BinaryNode]",
     },
 }
 

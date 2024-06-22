@@ -1,3 +1,4 @@
+import re
 from typing import Optional
 
 
@@ -43,6 +44,19 @@ def form_binary_tree(values: list[Optional[int]]) -> Optional[BinaryNode]:
          next_node.append(node.right)
 
    return head
+
+def to_bfs(tree: Optional[BinaryNode]) -> list[Optional[int]]:
+   if tree is None:
+      return []
+   nodes: list[Optional[BinaryNode]] = [tree]
+   result = []
+   while nodes:
+      node = nodes.pop()
+      result.append(node.value if node is not None else None)
+      if node:
+         nodes.append(node.left)
+         nodes.append(node.right)
+   return result
 
 
 def find_node_by_index(tree: Optional[BinaryNode], node_index: int) -> BinaryNode:
